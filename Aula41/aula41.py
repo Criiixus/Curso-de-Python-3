@@ -4,8 +4,13 @@ string= 'Valor qualquer'
 
 i = 0
 while i < len(string):
-    letra = string[1]
+    letra = string[i]
+
+    if letra == ' ':
+        break
 
     print(letra)
     i += 1
-    
+else:
+    print("Nao encontrei um espaco na string")
+print("Fora do while")
